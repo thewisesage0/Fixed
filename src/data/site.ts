@@ -15,11 +15,11 @@ function assetUrl(path: string): string {
 // ─── BOOK IMAGES (5 total) ──────────────────────────────────
 // To swap: replace the file in src/assets/books/ and update the filename string below.
 // Accepted formats: .jpg .jpeg .png .webp
-const book1 = assetUrl("books/book-1.jpg");
-const book2 = assetUrl("books/book-2.jpg");
-const book3 = assetUrl("books/book-3.jpg");
-const book4 = assetUrl("books/book-4.jpg");
-const book5 = assetUrl("books/book-5.jpg");
+const book1 = assetUrl("books/book-1.jpeg");
+const book2 = assetUrl("books/book-2.jpeg");
+const book3 = assetUrl("books/book-3.jpeg");
+const book4 = assetUrl("books/book-4.jpeg");
+const book5 = assetUrl("books/book-5.jpeg");
 
 // ─── COVER PORTFOLIO IMAGES (12 total) ──────────────────────
 // To swap: replace the file in src/assets/covers/ and update the filename string below.
@@ -169,19 +169,20 @@ export type CoverItem = {
 };
 
 export const coverPortfolio: CoverItem[] = [
-  { id: 1,  image: coverPortfolio01, title: "Crimson Alpha",       category: "Werewolf",     tags: ["Werewolf", "Dark Romance"], description: "A brooding alpha, fog-lit and cinematic. Deep reds, black smoke." },
-  { id: 2,  image: coverPortfolio02, title: "Throne of Ash",       category: "Dark Fantasy", tags: ["Dark Fantasy", "Epic"],      description: "A crown forged from burning ruins. Power and grief in one frame." },
-  { id: 3,  image: coverPortfolio03, title: "Midnight Luna",       category: "Romance",      tags: ["Romance", "Paranormal"],    description: "Soft silver light on a lone figure. Quiet tension." },
-  { id: 4,  image: coverPortfolio04, title: "Empire's Last Blood", category: "Dark Fantasy", tags: ["Dark Fantasy", "War"],       description: "Battlefield. Smoke and embers. A queen who refused to kneel." },
-  { id: 5,  image: coverPortfolio05, title: "Feral King",          category: "Dark Romance", tags: ["Dark Romance", "Lycan"],     description: "Raw power, fractured light, a monster with a man's eyes." },
-  { id: 6,  image: coverPortfolio06, title: "Pack Law",            category: "Werewolf",     tags: ["Werewolf", "Action"],        description: "Forest at night. The hunt begins. Clean and brutal composition." },
-  { id: 7,  image: coverPortfolio07, title: "Venom & Lace",       category: "Dark Romance", tags: ["Dark Romance", "Mafia"],     description: "Luxury gone dangerous. Silk, shadow, and something bleeding." },
-  { id: 8,  image: coverPortfolio08, title: "Reborn in Fury",      category: "Romance",      tags: ["Romance", "Revenge"],       description: "A woman rebuilt from fire. The resurrection of a Luna." },
-  { id: 9,  image: coverPortfolio09, title: "Stormclaw",           category: "Werewolf",     tags: ["Werewolf", "Romance"],      description: "Ice and snow. A man with cold eyes and a warm claim." },
-  { id: 10, image: coverPortfolio10, title: "Obsidian Court",      category: "Dark Fantasy", tags: ["Dark Fantasy", "Royal"],     description: "Court politics carved into shadow. An heir nobody expected." },
-  { id: 11, image: coverPortfolio11, title: "The Hollow Covenant", category: "Thriller",     tags: ["Thriller", "Paranormal"],   description: "Suspense built in layers. Something is watching." },
-  { id: 12, image: coverPortfolio12, title: "Neon Prophecy",       category: "Sci-Fi",       tags: ["Sci-Fi", "Cyber Noir"],     description: "Neon rain. A city that eats souls. Glitch-aesthetic typography." },
+  { id: 1,  image: coverPortfolio01, title: "Falling for my Ex’s Hockey Dad",          category: "Romance",      tags: ["Romance", "Sport"],    description: "Pink and Addictive" },
+  { id: 2,  image: coverPortfolio02, title: "Hidden Affection",          category: "Romance",      tags: ["Romance", ""],    description: "That skirt isn’t hiding any affection" },
+  { id: 3,  image: coverPortfolio03, title: "Miss Mafia Wicked Revenge",          category: "Romance",      tags: ["Romance", "Mafia"],    description: "Mad tattoos" },
+  { id: 4,  image: coverPortfolio04, title: "Mated to my Hot Alpha Professor",          category: "Romance",      tags: ["Romance", "Taboo"],    description: "Ouh that lip bite" },
+  { id: 5,  image: coverPortfolio05, title: "After my Mate killed me, I seduced his brother the beast lord", category: "Romance",      tags: ["Romance", "Werewolf"],    description: "Maybe I should kill my brother’s wife and frame him for it?" },
+  { id: 6,  image: coverPortfolio06, title: "His on the Ice",               category: "Hockey",     tags: ["Hockey", "Romance"],        description: "Yours on the Bed" },
+  { id: 7,  image: coverPortfolio07, title: "The Alpha’s Silent Bride: Seventh time’s a charm",          category: "Romance",      tags: ["Romance", "Werewolf"],    description: "And this is the seventh cover" },
+  { id: 8,  image: coverPortfolio08, title: "It all started with a bet",          category: "Romance",      tags: ["Romance", "School"],    description: "And I bet it ends with a kiss" },
+  { id: 9,  image: coverPortfolio09, title: "Surviving my Three Alpha Bullies",          category: "Romance",      tags: ["Romance", "School"],    description: "3 vs 1" },
+  { id: 10,  image: coverPortfolio10, title: "Kneel for me Slave",          category: "Romance",      tags: ["Romance", "Mafia"],    description: "Yes zaddy" },
+  { id: 11,  image: coverPortfolio11, title: "Pucked and tasted by my bully Alpha stepbrother",          category: "Romance",      tags: ["Werewolf", "Hockey"],    description: "Get a room!" },
+  { id: 12,  image: coverPortfolio12, title: "The Don’s Nanny",          category: "Romance",      tags: ["Romance", "Mafia"],    description: "The poor kid wondering where his nanny is…" },
 ];
+
 
 // ─── COVER FILTER CATEGORIES ────────────────────────────────
 export const categories = [
@@ -191,12 +192,12 @@ export const categories = [
 
 // ─── REVIEWS ────────────────────────────────────────────────
 export const reviews = [
-  { name: "Amara V.",   rating: 5, text: "His covers feel like film posters. They hijack your scroll and refuse to let go.",                             ref: "Cover commission — Dark Romance" },
+  { name: "Amara V.",   rating: 5, text: "His covers feel like film posters. They hijack your scroll and refuse to let go.",                         ref: "Cover commission — Dark Romance" },
   { name: "Kieran S.", rating: 5, text: "Midas Pen turned my manuscript into something I was finally proud to publish. Cinematic doesn't even cover it.", ref: "Captive of the Feral Lycan King — Cover" },
-  { name: "Léa M.",    rating: 5, text: "Betrayed by Blood consumed me entirely. I read it twice in one sitting. Unforgettable.",                        ref: "Betrayed by Blood, Reborn in Fury — Reader" },
-  { name: "Tomás R.",  rating: 5, text: "They understand story before they open Photoshop. That's the difference.",                                      ref: "Cinematic Deluxe Tier" },
-  { name: "Iris H.",   rating: 5, text: "Every detail is intentional. Light, fog, typography — all of it serves the story.",                            ref: "Rise of the Dormant Hybrid — Cover" },
-  { name: "Dario P.",  rating: 5, text: "The House of Midas Pen feels like stepping into a cinematic mansion of stories.",                              ref: "Reader — The Hockey Alpha's Fake Girlfriend" },
+  { name: "Léa M.",    rating: 5, text: "Betrayed by Blood consumed me entirely. I read it twice in one sitting. Unforgettable.",                    ref: "Betrayed by Blood, Reborn in Fury — Reader" },
+  { name: "Tomás R.",  rating: 5, text: "They understand story before they open Photoshop. That's the difference.",                                  ref: "Cinematic Deluxe Tier" },
+  { name: "Iris H.",   rating: 5, text: "Every detail is intentional. Light, fog, typography — all of it serves the story.",                        ref: "Rise of the Dormant Hybrid — Cover" },
+  { name: "Dario P.",  rating: 5, text: "I can trust readers to judge my book with the cover he made.", ref: "Cover commission"},
 ] as const;
 
 // ─── MANHWA DATA ────────────────────────────────────────────

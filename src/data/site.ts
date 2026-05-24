@@ -8,33 +8,33 @@
 // USAGE: assetUrl("books/book-1.jpg")
 // If your file is named differently (e.g. "book 1.jpeg"), just change
 // the string here. The folder is src/assets/.
-function assetUrl(path: string): string {
-  return new URL(`../assets/${path}`, import.meta.url).href;
-}
+// function assetUrl(path: string): string {
+  // return new URL(`../assets/${path}`, import.meta.url).href;
+// }
 
 // ─── BOOK IMAGES (5 total) ──────────────────────────────────
 // To swap: replace the file in src/assets/books/ and update the filename string below.
 // Accepted formats: .jpg .jpeg .png .webp
-const book1 = assetUrl("books/book-1.jpeg");
-const book2 = assetUrl("books/book-2.jpeg");
-const book3 = assetUrl("books/book-3.jpeg");
-const book4 = assetUrl("books/book-4.jpeg");
-const book5 = assetUrl("books/book-5.jpeg");
+import book1 from "@/assets/books/book-4.jpeg";
+import book2 from "@/assets/books/book-1.jpeg";
+import book3 from "@/assets/books/book-2.jpeg";
+import book4 from "@/assets/books/book-3.jpeg";
+import book5 from "@/assets/books/book-5.jpeg";
 
 // ─── COVER PORTFOLIO IMAGES (12 total) ──────────────────────
 // To swap: replace the file in src/assets/covers/ and update the filename string below.
-const coverPortfolio01 = assetUrl("covers/cover-01.jpg");
-const coverPortfolio02 = assetUrl("covers/cover-02.jpg");
-const coverPortfolio03 = assetUrl("covers/cover-03.jpg");
-const coverPortfolio04 = assetUrl("covers/cover-04.jpg");
-const coverPortfolio05 = assetUrl("covers/cover-05.jpg");
-const coverPortfolio06 = assetUrl("covers/cover-06.jpg");
-const coverPortfolio07 = assetUrl("covers/cover-07.jpg");
-const coverPortfolio08 = assetUrl("covers/cover-08.jpg");
-const coverPortfolio09 = assetUrl("covers/cover-09.jpg");
-const coverPortfolio10 = assetUrl("covers/cover-10.jpg");
-const coverPortfolio11 = assetUrl("covers/cover-11.jpg");
-const coverPortfolio12 = assetUrl("covers/cover-12.jpg");
+import coverPortfolio01 from "@/assets/covers/cover-01.jpg";
+import coverPortfolio02 from "@/assets/covers/cover-02.jpg";
+import coverPortfolio03 from "@/assets/covers/cover-03.jpg";
+import coverPortfolio04 from "@/assets/covers/cover-04.jpg";
+import coverPortfolio05 from "@/assets/covers/cover-05.jpg";
+import coverPortfolio06 from "@/assets/covers/cover-06.jpg";
+import coverPortfolio07 from "@/assets/covers/cover-07.jpg";
+import coverPortfolio08 from "@/assets/covers/cover-08.jpg";
+import coverPortfolio09 from "@/assets/covers/cover-09.jpg";
+import coverPortfolio10 from "@/assets/covers/cover-10.jpg";
+import coverPortfolio11 from "@/assets/covers/cover-11.jpg";
+import coverPortfolio12 from "@/assets/covers/cover-12.jpg";
 
 // ─── BRAND ──────────────────────────────────────────────────
 export const BRAND = {
